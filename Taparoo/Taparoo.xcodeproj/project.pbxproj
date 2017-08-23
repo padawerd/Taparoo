@@ -18,7 +18,8 @@
 		631667491F4D37E1002EA5E9 /* GamePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631667481F4D37E1002EA5E9 /* GamePlayView.swift */; };
 		6316674B1F4D382D002EA5E9 /* GamePlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6316674A1F4D382D002EA5E9 /* GamePlayView.xib */; };
 		6316674D1F4D3838002EA5E9 /* Note.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6316674C1F4D3838002EA5E9 /* Note.xib */; };
-		6316674F1F4D3AD7002EA5E9 /* Skillz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6316674E1F4D3AD7002EA5E9 /* Skillz.framework */; };
+		631667531F4D3D5F002EA5E9 /* Skillz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6316674E1F4D3AD7002EA5E9 /* Skillz.framework */; };
+		631667541F4D3D5F002EA5E9 /* Skillz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6316674E1F4D3AD7002EA5E9 /* Skillz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,20 @@
 			remoteInfo = Taparoo;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		631667551F4D3D5F002EA5E9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				631667541F4D3D5F002EA5E9 /* Skillz.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6316671C1F4D3637002EA5E9 /* Taparoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taparoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6316674F1F4D3AD7002EA5E9 /* Skillz.framework in Frameworks */,
+				631667531F4D3D5F002EA5E9 /* Skillz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +148,8 @@
 				631667181F4D3637002EA5E9 /* Sources */,
 				631667191F4D3637002EA5E9 /* Frameworks */,
 				6316671A1F4D3637002EA5E9 /* Resources */,
+				631667551F4D3D5F002EA5E9 /* Embed Frameworks */,
+				631667561F4D3D79002EA5E9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -221,6 +238,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		631667561F4D3D79002EA5E9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -e \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Skillz.framework/postprocess.sh\" ]; then\n/bin/sh \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Skillz.framework/postprocess.sh\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		631667181F4D3637002EA5E9 /* Sources */ = {
@@ -366,9 +399,20 @@
 					"$(PROJECT_DIR)/Taparoo",
 				);
 				INFOPLIST_FILE = Taparoo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"-lz",
+					"-lsqlite3",
+					"-lxml2",
+					"-weak_framework",
+					PassKit,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DPad.Taparoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Taparoo/Skillz.Framework/Headers/SkillzBridgingHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -382,9 +426,20 @@
 					"$(PROJECT_DIR)/Taparoo",
 				);
 				INFOPLIST_FILE = Taparoo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"-lz",
+					"-lsqlite3",
+					"-lxml2",
+					"-weak_framework",
+					PassKit,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DPad.Taparoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Taparoo/Skillz.Framework/Headers/SkillzBridgingHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

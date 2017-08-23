@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-//import Skillz
+import Skillz
 
 class GamePlayViewController : UIViewController {
     var model = GamePlayModel()
@@ -42,8 +42,8 @@ class GamePlayViewController : UIViewController {
             if (self.ticks == 8) {
                 self.ticks = 0
                 let note = Note()
-                //var randomNum =  Int(Skillz.getRandomNumber(withMin: 0, andMax: 7))
-                var randomNum = Int(arc4random_uniform(7))
+                var randomNum =  Int(Skillz.getRandomNumber(withMin: 0, andMax: 7))
+                //var randomNum = Int(arc4random_uniform(7))
                 //not the same note as the previous one
                 if let mostRecentNote = self.model.currentNotes.last {
                     if (randomNum >= mostRecentNote.type.rawValue) {
@@ -108,7 +108,7 @@ class GamePlayViewController : UIViewController {
             self.manageProgressBar()
             gamePlayView.score.text = "Score: " + String(self.model.score)
             let score = NSNumber(integerLiteral: self.model.score)
-            //Skillz.skillzInstance().updatePlayersCurrentScore(score)
+            Skillz.skillzInstance().updatePlayersCurrentScore(score)
         }
 
         renderedNote.frame.size = CGSize(width: 50, height: 50)
@@ -274,9 +274,6 @@ class GamePlayViewController : UIViewController {
         }
         self.view.addSubview(renderedNote)
         self.model.currentNotes.append(renderedNote)
-
-        //do this IF in box
-
     }
 
     func removeRenderedNote(note: Note) {
@@ -311,6 +308,6 @@ class GamePlayViewController : UIViewController {
             note.removeFromSuperview()
         }
         let score = NSNumber(integerLiteral: self.model.score)
-        //Skillz.skillzInstance().displayTournamentResults(withScore: score, withCompletion: {() in })
+        Skillz.skillzInstance().displayTournamentResults(withScore: score, withCompletion: {() in })
     }
 }

@@ -7,11 +7,10 @@
 //
 
 import UIKit
-//import Skillz
+import Skillz
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    //, SkillzDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, SkillzDelegate {
 
     var window: UIWindow?
 
@@ -19,29 +18,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         //change with: to SkillzProduction when done
-        //Skillz.skillzInstance().initWithGameId("3870", for: self, with: SkillzEnvironment.sandbox, allowExit: false)
-        //Skillz.skillzInstance().launch()
+        Skillz.skillzInstance().initWithGameId("3870", for: self, with: SkillzEnvironment.sandbox, allowExit: false)
+        Skillz.skillzInstance().launch()
 
         // Override point for customization after application launch.
 
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let homeViewController = GamePlayViewController()
-        homeViewController.view.backgroundColor = UIColor.yellow
-        window!.rootViewController = homeViewController
-        window!.makeKeyAndVisible();
+        //window = UIWindow(frame: UIScreen.main.bounds)
+        //let homeViewController = GamePlayViewController()
+        //homeViewController.view.backgroundColor = UIColor.yellow
+        //window!.rootViewController = homeViewController
+        //window!.makeKeyAndVisible();
 
         return true
     }
 
-   /* func preferredSkillzInterfaceOrientation() -> SkillzOrientation {
+    func preferredSkillzInterfaceOrientation() -> SkillzOrientation {
         return SkillzOrientation.portrait
-    }*/
+    }
 
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
         return .portrait
     }
 
-    /*func tournamentWillBegin(_ gameParameters: [AnyHashable : Any]!, with matchInfo: SKZMatchInfo!) {
+    func tournamentWillBegin(_ gameParameters: [AnyHashable : Any]!, with matchInfo: SKZMatchInfo!) {
         //let gamePlayViewController = GamePlayViewController()
         //gamePlayViewController.start()
 
@@ -51,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.rootViewController = homeViewController
         window!.makeKeyAndVisible();
 
-    }*/
+    }
 
 
 
