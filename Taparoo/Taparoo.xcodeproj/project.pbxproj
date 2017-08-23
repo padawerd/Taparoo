@@ -18,6 +18,7 @@
 		631667491F4D37E1002EA5E9 /* GamePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631667481F4D37E1002EA5E9 /* GamePlayView.swift */; };
 		6316674B1F4D382D002EA5E9 /* GamePlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6316674A1F4D382D002EA5E9 /* GamePlayView.xib */; };
 		6316674D1F4D3838002EA5E9 /* Note.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6316674C1F4D3838002EA5E9 /* Note.xib */; };
+		6316674F1F4D3AD7002EA5E9 /* Skillz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6316674E1F4D3AD7002EA5E9 /* Skillz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		631667481F4D37E1002EA5E9 /* GamePlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayView.swift; sourceTree = "<group>"; };
 		6316674A1F4D382D002EA5E9 /* GamePlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePlayView.xib; sourceTree = "<group>"; };
 		6316674C1F4D3838002EA5E9 /* Note.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Note.xib; sourceTree = "<group>"; };
+		6316674E1F4D3AD7002EA5E9 /* Skillz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Skillz.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6316674F1F4D3AD7002EA5E9 /* Skillz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +90,7 @@
 		6316671E1F4D3637002EA5E9 /* Taparoo */ = {
 			isa = PBXGroup;
 			children = (
+				6316674E1F4D3AD7002EA5E9 /* Skillz.framework */,
 				6316673F1F4D369C002EA5E9 /* GamePlay */,
 				6316671F1F4D3637002EA5E9 /* AppDelegate.swift */,
 				631667261F4D3637002EA5E9 /* Assets.xcassets */,
@@ -357,6 +361,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Taparoo",
+				);
 				INFOPLIST_FILE = Taparoo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DPad.Taparoo;
@@ -369,6 +377,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Taparoo",
+				);
 				INFOPLIST_FILE = Taparoo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DPad.Taparoo;
