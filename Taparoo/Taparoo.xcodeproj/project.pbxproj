@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		631667201F4D3637002EA5E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6316671F1F4D3637002EA5E9 /* AppDelegate.swift */; };
+		631667271F4D3637002EA5E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631667261F4D3637002EA5E9 /* Assets.xcassets */; };
+		6316672A1F4D3637002EA5E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631667281F4D3637002EA5E9 /* LaunchScreen.storyboard */; };
+		631667351F4D3637002EA5E9 /* TaparooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631667341F4D3637002EA5E9 /* TaparooTests.swift */; };
+		631667411F4D36B0002EA5E9 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631667401F4D36B0002EA5E9 /* GamePlayViewController.swift */; };
+		631667431F4D3738002EA5E9 /* GamePlayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631667421F4D3738002EA5E9 /* GamePlayModel.swift */; };
+		631667451F4D3762002EA5E9 /* GameLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631667441F4D3762002EA5E9 /* GameLoop.swift */; };
+		631667471F4D378C002EA5E9 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631667461F4D378C002EA5E9 /* Note.swift */; };
+		631667491F4D37E1002EA5E9 /* GamePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631667481F4D37E1002EA5E9 /* GamePlayView.swift */; };
+		6316674B1F4D382D002EA5E9 /* GamePlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6316674A1F4D382D002EA5E9 /* GamePlayView.xib */; };
+		6316674D1F4D3838002EA5E9 /* Note.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6316674C1F4D3838002EA5E9 /* Note.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		631667311F4D3637002EA5E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 631667141F4D3637002EA5E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6316671B1F4D3637002EA5E9;
+			remoteInfo = Taparoo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6316671C1F4D3637002EA5E9 /* Taparoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taparoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6316671F1F4D3637002EA5E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		631667261F4D3637002EA5E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		631667291F4D3637002EA5E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6316672B1F4D3637002EA5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		631667301F4D3637002EA5E9 /* TaparooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaparooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		631667341F4D3637002EA5E9 /* TaparooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaparooTests.swift; sourceTree = "<group>"; };
+		631667361F4D3637002EA5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		631667401F4D36B0002EA5E9 /* GamePlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
+		631667421F4D3738002EA5E9 /* GamePlayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayModel.swift; sourceTree = "<group>"; };
+		631667441F4D3762002EA5E9 /* GameLoop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLoop.swift; sourceTree = "<group>"; };
+		631667461F4D378C002EA5E9 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		631667481F4D37E1002EA5E9 /* GamePlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayView.swift; sourceTree = "<group>"; };
+		6316674A1F4D382D002EA5E9 /* GamePlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePlayView.xib; sourceTree = "<group>"; };
+		6316674C1F4D3838002EA5E9 /* Note.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Note.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		631667191F4D3637002EA5E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6316672D1F4D3637002EA5E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		631667131F4D3637002EA5E9 = {
+			isa = PBXGroup;
+			children = (
+				6316671E1F4D3637002EA5E9 /* Taparoo */,
+				631667331F4D3637002EA5E9 /* TaparooTests */,
+				6316671D1F4D3637002EA5E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6316671D1F4D3637002EA5E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6316671C1F4D3637002EA5E9 /* Taparoo.app */,
+				631667301F4D3637002EA5E9 /* TaparooTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6316671E1F4D3637002EA5E9 /* Taparoo */ = {
+			isa = PBXGroup;
+			children = (
+				6316673F1F4D369C002EA5E9 /* GamePlay */,
+				6316671F1F4D3637002EA5E9 /* AppDelegate.swift */,
+				631667261F4D3637002EA5E9 /* Assets.xcassets */,
+				631667281F4D3637002EA5E9 /* LaunchScreen.storyboard */,
+				6316672B1F4D3637002EA5E9 /* Info.plist */,
+			);
+			path = Taparoo;
+			sourceTree = "<group>";
+		};
+		631667331F4D3637002EA5E9 /* TaparooTests */ = {
+			isa = PBXGroup;
+			children = (
+				631667341F4D3637002EA5E9 /* TaparooTests.swift */,
+				631667361F4D3637002EA5E9 /* Info.plist */,
+			);
+			path = TaparooTests;
+			sourceTree = "<group>";
+		};
+		6316673F1F4D369C002EA5E9 /* GamePlay */ = {
+			isa = PBXGroup;
+			children = (
+				6316674C1F4D3838002EA5E9 /* Note.xib */,
+				6316674A1F4D382D002EA5E9 /* GamePlayView.xib */,
+				631667401F4D36B0002EA5E9 /* GamePlayViewController.swift */,
+				631667421F4D3738002EA5E9 /* GamePlayModel.swift */,
+				631667441F4D3762002EA5E9 /* GameLoop.swift */,
+				631667461F4D378C002EA5E9 /* Note.swift */,
+				631667481F4D37E1002EA5E9 /* GamePlayView.swift */,
+			);
+			name = GamePlay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6316671B1F4D3637002EA5E9 /* Taparoo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 631667391F4D3637002EA5E9 /* Build configuration list for PBXNativeTarget "Taparoo" */;
+			buildPhases = (
+				631667181F4D3637002EA5E9 /* Sources */,
+				631667191F4D3637002EA5E9 /* Frameworks */,
+				6316671A1F4D3637002EA5E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Taparoo;
+			productName = Taparoo;
+			productReference = 6316671C1F4D3637002EA5E9 /* Taparoo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6316672F1F4D3637002EA5E9 /* TaparooTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6316673C1F4D3637002EA5E9 /* Build configuration list for PBXNativeTarget "TaparooTests" */;
+			buildPhases = (
+				6316672C1F4D3637002EA5E9 /* Sources */,
+				6316672D1F4D3637002EA5E9 /* Frameworks */,
+				6316672E1F4D3637002EA5E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				631667321F4D3637002EA5E9 /* PBXTargetDependency */,
+			);
+			name = TaparooTests;
+			productName = TaparooTests;
+			productReference = 631667301F4D3637002EA5E9 /* TaparooTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		631667141F4D3637002EA5E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "DPad Studios";
+				TargetAttributes = {
+					6316671B1F4D3637002EA5E9 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					6316672F1F4D3637002EA5E9 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6316671B1F4D3637002EA5E9;
+					};
+				};
+			};
+			buildConfigurationList = 631667171F4D3637002EA5E9 /* Build configuration list for PBXProject "Taparoo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 631667131F4D3637002EA5E9;
+			productRefGroup = 6316671D1F4D3637002EA5E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6316671B1F4D3637002EA5E9 /* Taparoo */,
+				6316672F1F4D3637002EA5E9 /* TaparooTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6316671A1F4D3637002EA5E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6316674B1F4D382D002EA5E9 /* GamePlayView.xib in Resources */,
+				6316672A1F4D3637002EA5E9 /* LaunchScreen.storyboard in Resources */,
+				631667271F4D3637002EA5E9 /* Assets.xcassets in Resources */,
+				6316674D1F4D3838002EA5E9 /* Note.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6316672E1F4D3637002EA5E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		631667181F4D3637002EA5E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631667471F4D378C002EA5E9 /* Note.swift in Sources */,
+				631667411F4D36B0002EA5E9 /* GamePlayViewController.swift in Sources */,
+				631667451F4D3762002EA5E9 /* GameLoop.swift in Sources */,
+				631667201F4D3637002EA5E9 /* AppDelegate.swift in Sources */,
+				631667491F4D37E1002EA5E9 /* GamePlayView.swift in Sources */,
+				631667431F4D3738002EA5E9 /* GamePlayModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6316672C1F4D3637002EA5E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631667351F4D3637002EA5E9 /* TaparooTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		631667321F4D3637002EA5E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6316671B1F4D3637002EA5E9 /* Taparoo */;
+			targetProxy = 631667311F4D3637002EA5E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		631667281F4D3637002EA5E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				631667291F4D3637002EA5E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		631667371F4D3637002EA5E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		631667381F4D3637002EA5E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6316673A1F4D3637002EA5E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Taparoo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DPad.Taparoo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6316673B1F4D3637002EA5E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Taparoo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DPad.Taparoo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6316673D1F4D3637002EA5E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TaparooTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DPad.TaparooTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Taparoo.app/Taparoo";
+			};
+			name = Debug;
+		};
+		6316673E1F4D3637002EA5E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TaparooTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DPad.TaparooTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Taparoo.app/Taparoo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		631667171F4D3637002EA5E9 /* Build configuration list for PBXProject "Taparoo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				631667371F4D3637002EA5E9 /* Debug */,
+				631667381F4D3637002EA5E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		631667391F4D3637002EA5E9 /* Build configuration list for PBXNativeTarget "Taparoo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6316673A1F4D3637002EA5E9 /* Debug */,
+				6316673B1F4D3637002EA5E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6316673C1F4D3637002EA5E9 /* Build configuration list for PBXNativeTarget "TaparooTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6316673D1F4D3637002EA5E9 /* Debug */,
+				6316673E1F4D3637002EA5E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 631667141F4D3637002EA5E9 /* Project object */;
+}
