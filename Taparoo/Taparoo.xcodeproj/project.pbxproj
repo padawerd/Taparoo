@@ -20,6 +20,7 @@
 		6316674D1F4D3838002EA5E9 /* Note.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6316674C1F4D3838002EA5E9 /* Note.xib */; };
 		631667531F4D3D5F002EA5E9 /* Skillz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6316674E1F4D3AD7002EA5E9 /* Skillz.framework */; };
 		631667541F4D3D5F002EA5E9 /* Skillz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6316674E1F4D3AD7002EA5E9 /* Skillz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		63F983811F4FE549005942DA /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F983801F4FE549005942DA /* FirstScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		6316674A1F4D382D002EA5E9 /* GamePlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePlayView.xib; sourceTree = "<group>"; };
 		6316674C1F4D3838002EA5E9 /* Note.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Note.xib; sourceTree = "<group>"; };
 		6316674E1F4D3AD7002EA5E9 /* Skillz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Skillz.framework; sourceTree = "<group>"; };
+		63F983801F4FE549005942DA /* FirstScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		6316671E1F4D3637002EA5E9 /* Taparoo */ = {
 			isa = PBXGroup;
 			children = (
+				63F9837F1F4FE53A005942DA /* FirstScreen */,
 				6316674E1F4D3AD7002EA5E9 /* Skillz.framework */,
 				6316673F1F4D369C002EA5E9 /* GamePlay */,
 				6316671F1F4D3637002EA5E9 /* AppDelegate.swift */,
@@ -136,6 +139,14 @@
 				631667481F4D37E1002EA5E9 /* GamePlayView.swift */,
 			);
 			name = GamePlay;
+			sourceTree = "<group>";
+		};
+		63F9837F1F4FE53A005942DA /* FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
+				63F983801F4FE549005942DA /* FirstScreenViewController.swift */,
+			);
+			name = FirstScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +201,7 @@
 				TargetAttributes = {
 					6316671B1F4D3637002EA5E9 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = S4QXJ6Q82P;
 						ProvisioningStyle = Automatic;
 					};
 					6316672F1F4D3637002EA5E9 = {
@@ -264,6 +276,7 @@
 				631667411F4D36B0002EA5E9 /* GamePlayViewController.swift in Sources */,
 				631667451F4D3762002EA5E9 /* GameLoop.swift in Sources */,
 				631667201F4D3637002EA5E9 /* AppDelegate.swift in Sources */,
+				63F983811F4FE549005942DA /* FirstScreenViewController.swift in Sources */,
 				631667491F4D37E1002EA5E9 /* GamePlayView.swift in Sources */,
 				631667431F4D3738002EA5E9 /* GamePlayModel.swift in Sources */,
 			);
@@ -394,6 +407,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S4QXJ6Q82P;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Taparoo",
@@ -421,6 +436,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S4QXJ6Q82P;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Taparoo",
@@ -491,6 +508,7 @@
 				6316673B1F4D3637002EA5E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6316673C1F4D3637002EA5E9 /* Build configuration list for PBXNativeTarget "TaparooTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +517,7 @@
 				6316673E1F4D3637002EA5E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

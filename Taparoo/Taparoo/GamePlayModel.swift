@@ -14,7 +14,7 @@ struct GamePlayModel {
     var score = 0;
     var currentMultiplier = 1;
     var streak = 0;
-    var gameSpeed = 5.0
+    var gameSpeed = 1.0
     var ticksUntilGone = 5
     var hitSlop = 20
     var secondsLeft = 60

@@ -39,7 +39,7 @@ class GamePlayViewController : UIViewController {
             self.ticks += 1
 
             //create new note
-            if (self.ticks == 8) {
+            if (self.ticks == 25) {
                 self.ticks = 0
                 let note = Note()
                 var randomNum =  Int(Skillz.getRandomNumber(withMin: 0, andMax: 7))

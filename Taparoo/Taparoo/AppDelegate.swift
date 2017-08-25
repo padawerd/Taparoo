@@ -19,15 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SkillzDelegate {
 
         //change with: to SkillzProduction when done
         Skillz.skillzInstance().initWithGameId("3870", for: self, with: SkillzEnvironment.sandbox, allowExit: false)
-        Skillz.skillzInstance().launch()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let homeViewController = FirstScreenViewController()
+        homeViewController.view.backgroundColor = UIColor.yellow
+        window!.rootViewController = homeViewController
+        window!.makeKeyAndVisible();
 
         // Override point for customization after application launch.
-
-        //window = UIWindow(frame: UIScreen.main.bounds)
-        //let homeViewController = GamePlayViewController()
-        //homeViewController.view.backgroundColor = UIColor.yellow
-        //window!.rootViewController = homeViewController
-        //window!.makeKeyAndVisible();
 
         return true
     }
